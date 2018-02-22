@@ -1,0 +1,39 @@
+// =========================================
+// Mixins ----------------------------------
+
+  // ------------------------------
+	// Clearfix mixin
+	// Exemplo de uso: chamar clearfix() dentro da classe onde deseja aplicar
+	clearfix()
+		clear both
+		&:before {
+			content: '';
+			display: block;
+    }
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+    }
+
+	// ------------------------------
+	// BEM CSS mixins
+	// Exemplo de uso: chamar dentro da classe pai +el('ParaElementos') e +mod('ParaModificadores')
+	el(element)
+		&__{element}{
+      block
+    }
+
+	mod(modifier)
+		&--{modifier}{
+      block
+    }
+
+	// ------------------------------
+	// Grid mixin
+	// Exemplo de uso: chamar dentro da classe grid() inserindo a largura desejada
+	grid(value){
+    display: inline-block;
+		width: value;
+		float: left;
+  }
