@@ -1,0 +1,25 @@
+{
+  "name": "the-ux-library",
+  "version": "1.0.0",
+  "description": "O aplicativo The UX Library lista para você todos links mais relevantes UX para você",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/LucasRuy/the-ux-library.git"
+  },
+  "keywords": [
+    "UX",
+    "Javascript",
+    "Stylus",
+    "PUG"
+  ],
+  "author": "Lucas Ruy <lukas.r@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/LucasRuy/the-ux-library/issues"
+  },
+  "homepage": "https://gitlab.com/LucasRuy/the-ux-library#README"
+}
