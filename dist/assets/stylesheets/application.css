@@ -1,3 +1,0 @@
-@charset 'UTF-8';
-:after{content:'';display:table;clear:both}*,*:after,*:before{-mox-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}body{background-color:#272727;color:#fff;font-family:'Arial',sans-serif;font-size:16px;font-smoothing:antialiased;text-size-adjust:none}h1,h2,h3,h4,h5,h6{font-family:montserrat;font-weight:700}ol,ul{list-style:none}a{text-decoration:none}p{font-weight:500;}p b,p strong{font-weight:700}img{width:100%}.section{position:relative;display:block;width:100%;height:100%;box-sizing:border-box;clear:both;}.section:before{content:'';display:block}
-/*# sourceMappingURL=application.css.map */
