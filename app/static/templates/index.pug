@@ -1,17 +1,19 @@
 doctype html
 html(lang='pt-br')
 
-	head
-		title The UX Library
-		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(http-equiv="X-UA-Compatible" content="IE=EmulateIE11")
-		meta(http-equiv="cache-control" content="no-cache")
-		meta(http-equiv="expires" content="-1")
-		meta(http-equiv="pragma" content="no-cache")
-		link(rel='stylesheet', href='stylesheets/application.css')
+  head
+    title The UX Library
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=EmulateIE11")
+    meta(http-equiv="cache-control" content="no-cache")
+    meta(http-equiv="expires" content="-1")
+    meta(http-equiv="pragma" content="no-cache")
+    link(rel='stylesheet', href='assets/stylesheets/application.css')
 
-	body
-		main
-			//- Views
-			include views/section-1
+  body
+    main
+      //- Views
+      include views/section-1
+
+    script(type="text/javascript", src='assets/javascripts/bundle.js')
