@@ -1,0 +1,8 @@
+mixin button(textContent, classContent)
+  button(type='button', class= classContent)= textContent
+
+    if (classContent.indexOf('button--add') > -1)
+      svg: use(xlink:href="assets/images/svg/icons.svg#add")
+
+    else if (classContent.indexOf('button--more') > -1)
+      svg: use(xlink:href="assets/images/svg/icons.svg#refresh")
