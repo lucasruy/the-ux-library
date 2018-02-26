@@ -1,0 +1,21 @@
+nav(class='navigation')
+  div(class='navigation__wrapper')
+    div(class='navigation__logo')
+      img(src='assets/images/logo-ux.png')
+
+    div(class='navigation__menu')
+      ul(class='menu-dropdown')
+        span(class='menu-dropdown__hamburguer')
+        div(class='menu-dropdown__list')
+          li(class='menu-dropdown__list__item') Popularidade
+          li(class='menu-dropdown__list__item') Data
+          li(class='menu-dropdown__list__item') Comentários
+
+    div(class='navigation__search')
+      +searchInput('text', 'input input--search')
+
+    div(class='navigation__user')
+      +button('Add post', 'button button--add')
+
+      div(class='user-info')
+        span(class='user-info__notify') 5

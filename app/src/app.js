@@ -1,6 +1,6 @@
 import { utilsTest } from './utils';
-import ComponentTest from './components/ComponentTest';
+import Dropdown from './components/Dropdown';
 
 window.addEventListener('load', () => {
-  ComponentTest('ComponentTest...');
+  Dropdown();
 }, false);

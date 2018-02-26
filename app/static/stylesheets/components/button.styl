@@ -1,5 +1,5 @@
 .button {
-  display block
+  display inline-block
   position relative
 
   padding 5px 10px
@@ -18,12 +18,16 @@
   &:focus {
     outline none
   }
+  &:active {
+    transform translateY(1px)
+  }
 
   &--add {
     background-color c-orange
     color c-white
 
-    padding 14px 18px 15px 45px
+    padding 11px 18px 11px 45px
+    margin 0px
 
     svg {
       fill: c-white
@@ -33,7 +37,7 @@
       height 14px
 
       position absolute
-      top 15px
+      top 13px
       left 12px
     }
 
@@ -70,11 +74,15 @@
       width 20px
       height 20px
 
-      position absolute
-      top 50%
-      left 44%
-
       transform translate3D(-50%, -50%, 0px) rotate(90deg)
+
+      position relative
+      top 15px
+    }
+
+    p {
+      display inline-block
+      font-weight 700
     }
 
     &:hover{

@@ -1,8 +1,16 @@
 mixin button(textContent, classContent)
-  button(type='button', class= classContent)= textContent
+  button(type='button', class= classContent)
 
     if (classContent.indexOf('button--add') > -1)
       svg: use(xlink:href="assets/images/svg/icons.svg#add")
+      p= textContent
 
     else if (classContent.indexOf('button--more') > -1)
       svg: use(xlink:href="assets/images/svg/icons.svg#refresh")
+      p= textContent
+
+mixin searchInput(inputType, classContent)
+  div(class="search-box")
+    svg: use(xlink:href="assets/images/svg/icons.svg#search")
+    input(type= inputType, class= classContent)
+
