@@ -1,0 +1,101 @@
+.footer {
+  padding 0px
+
+  &__wrapper {
+    display block
+    width 100%
+    max-width 920px
+
+    margin-left auto
+    margin-right auto
+    padding 0px 10px
+  }
+
+  &__infos {
+    grid(50%)
+
+    img {
+      width 35px
+    }
+
+    &__tx {
+      display inline-block
+      position relative
+      top -5px
+
+      h1 {
+        font-size 16px
+      }
+      p {
+        font-size 12px
+      }
+    }
+  }
+
+  &__about {
+    grid(50%)
+    text-align right
+
+    .social-list {
+      display inline-block
+
+      svg {
+        display inline-block
+        width 15px
+        height 15px
+
+        margin-right 5px
+
+        position relative
+        top 2px
+      }
+
+      &__item {
+        display inline-block
+        a {
+          color c-black
+          font-size 14px
+        }
+        .item-facebook {
+          fill #3D599B
+        }
+        .item-twitter {
+          fill #00ACEE
+        }
+
+        &:first-child {
+          margin-right 5px
+        }
+      }
+    }
+    .about-list {
+      position relative
+      display inline-block
+      height 35px
+      &:before {
+        content '•'
+        color #A9A9A9
+        margin 0px 5px
+      }
+      &:after {
+        content '©2018 - The UX Library'
+        color #A9A9A9
+        font-size 12px
+        position absolute
+        bottom 0px
+        right 0px
+      }
+      &__item {
+        display inline-block
+        margin-right 8px
+        a {
+          color c-orange
+          font-size 16px
+        }
+        &:last-child{
+          margin 0px
+        }
+      }
+    }
+  }
+}

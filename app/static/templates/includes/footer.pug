@@ -1,0 +1,26 @@
+footer(class='footer')
+  div(class='footer__wrapper')
+
+    div(class='footer__infos')
+      img(src='assets/images/logo-ux.png')
+      div(class='footer__infos__tx')
+        h1 The UX Library
+        p Community curated design content & discussion
+
+    div(class='footer__about')
+
+      ul(class='social-list')
+        li(class='social-list__item')
+          a(href='#facebook')
+            svg(class='item-facebook'): use(xlink:href="assets/images/svg/icons.svg#facebook")
+            | Facebook
+
+        li(class='social-list__item')
+          a(href='#twitter')
+            svg(class='item-twitter'): use(xlink:href="assets/images/svg/icons.svg#twitter")
+            | Twitter
+
+      ul(class='about-list')
+        li(class='about-list__item'): a(href='#about') About
+        li(class='about-list__item'): a(href='#about') Contact
+        li(class='about-list__item'): a(href='#about') Sign in
