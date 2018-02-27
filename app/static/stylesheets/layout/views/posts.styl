@@ -1,0 +1,157 @@
+.posts {
+  padding 10px 0px
+
+  .posts-list {
+    clearfix()
+
+    &__item {
+      padding 30px 0px
+
+      .post-popularity {
+        grid(5%)
+        margin-right 3%
+        padding 10px 0px
+
+        border 1px solid c-gray-light
+        border-radius 4px
+
+        text-align center
+        position relative
+
+        &:after {
+          content ''
+
+          display block
+          width 100%
+          height 1px
+
+          background-color c-gray-light
+
+          position absolute
+          top 32px
+          left 0px
+        }
+
+        svg {
+          display block
+          width 15px
+          height 15px
+
+          margin 0px auto 12px
+
+          fill c-orange
+          transform rotate(-90deg)
+        }
+
+        span {
+          font-size 18px
+          font-weight 700
+        }
+      }
+      .post-content {
+        grid(92%)
+
+        h2 {
+          font-weight 500
+        }
+        h6 {
+          color #cbcbcb
+          text-transform uppercase
+        }
+
+        &__elements {
+          grid(100%)
+
+          &__tags {
+            grid(15%)
+            margin-right 2%
+            margin-top 3px
+            border-right 1px solid #C7C7C7
+
+            span {
+              display inline-block
+
+              background-color c-white
+              color c-black
+
+              border 1px solid c-black
+              border-radius 50px
+              padding 5px 10px
+
+              font-size 14px
+
+              &[data-tag='discussion'] {
+                border 1px solid transparent
+                background-color #4271D6
+                color c-white
+              }
+              &[data-tag='ux_ui'] {
+                border 1px solid transparent
+                background-color #00BBFF
+                color c-white
+              }
+              &[data-tag='product_design'] {
+                border 1px solid transparent
+                background-color #00E2AD
+                color c-white
+              }
+              &[data-tag='case_study'] {
+                border 1px solid transparent
+                background-color #F4973C
+                color c-white
+              }
+            }
+          }
+
+          &__info {
+            grid(83%)
+            line-height 32px
+            font-size 14px
+
+            .info-author, .info-date, .info-comments, .info-edit {
+              display inline-block
+              margin-right 15px
+            }
+
+            .info-author, .info-comments, .info-edit {
+              color: c-orange
+              cursor pointer
+              text-decoration underline
+            }
+            .info-date {
+              color c-gray
+            }
+            .info-comments {
+              position relative
+              padding-left 10px
+
+              &:before {
+                content ''
+
+                display block
+                width 5px
+                height 5px
+
+                background-color c-gray
+                border-radius 10px
+
+                position absolute
+                top 14px
+                left -6px
+              }
+              svg {
+                fill c-orange
+                display inline-block
+                width 15px
+                height 15px
+                position relative
+                top 3px
+                right 3px
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

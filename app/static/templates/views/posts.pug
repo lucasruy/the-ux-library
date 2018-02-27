@@ -1,0 +1,28 @@
+section(class='section section--posts')
+
+  div(class='posts')
+
+    ul(class='posts-list')
+      li(class='posts-list__item')
+        div(class='post-popularity')
+          svg: use(xlink:href="assets/images/svg/icons.svg#arrow")
+          span 11
+
+        div(class='post-content')
+          h6 medium.com
+          h2 Want people to use your product? Use it yourself.
+
+          div(class='post-content__elements')
+
+            div(class='post-content__elements__tags')
+              span(data-tag='product_design') Product Desing
+
+            div(class='post-content__elements__info')
+              span(class='info-author') Nobtaka Nukui
+              span(class='info-date') 43 minutes ago
+              span(class='info-comments')
+                svg: use(xlink:href="assets/images/svg/icons.svg#chat")
+                | 4 Comments
+              span(class='info-edit') Edit
+
+    +button('Load more', 'button button--more')
