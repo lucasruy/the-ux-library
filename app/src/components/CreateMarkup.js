@@ -9,8 +9,6 @@ const CreateMarkup = () => {
     const listWrapper = document.querySelector('.posts-list');
     const userInfo = document.querySelector('.user-info__notify');
 
-    userInfo.textContent = listWrapper.childNodes.length;
-
     itemsList.forEach((item, index) => {
       const { comments, upvotes, category } = item;
       const { author, title, url } = item.meta;
@@ -51,6 +49,8 @@ const CreateMarkup = () => {
       if (listWrapper.childNodes.length < 5) {
         listWrapper.appendChild(itemLI);
         listWrapper.classList.add('is-active');
+
+        userInfo.textContent = listWrapper.childNodes.length;
       }
     });
   };
