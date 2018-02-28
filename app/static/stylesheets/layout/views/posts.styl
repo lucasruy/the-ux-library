@@ -4,6 +4,17 @@
   .posts-list {
     clearfix()
 
+    height 0px
+    overflow hidden
+    transform scaleY(0)
+    transform-origin 0px 0px
+    transition all 200ms ease
+
+    &.is-active {
+      height auto
+      transform scaleY(1)
+    }
+
     &__item {
       padding 30px 0px
 
