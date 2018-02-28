@@ -1,6 +1,11 @@
-import { utilsTest } from './utils';
+// =========================================
+// Import Functions  -----------------------
+
+// Dropdown -------------------------------
 import Dropdown from './components/Dropdown';
 
+// ========================================
+// Init Events  ---------------------------
 window.addEventListener('load', () => {
   Dropdown();
-}, false);
+});
