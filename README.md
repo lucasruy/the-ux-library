@@ -111,4 +111,5 @@ Este projeto foi desenvolvido com muito <3 e Javascript.
 
 ## Créditos
 
-* [Free Vector icons](https://www.flaticon.com/) - Banco de vetores onde os icones em SVG foram encontrados.
+* [Free Vector icons](https://www.flaticon.com/) - Repositório de icones gratuitos onde foram encontrados os icones em SVG utilizados no projeto.
+* [Google Fonts](https://fonts.google.com/) - Repositório de fontes gratuitas onde foi encontrada a fonte utilizada no projeto.
