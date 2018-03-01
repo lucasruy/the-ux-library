@@ -55,7 +55,7 @@ const LoadMore = () => {
 
     buttonLoad.classList.add('is-active');
 
-    if (listWrapper.childNodes.length <= 5) {
+    if (listWrapper.childNodes.length <= 6) {
       dataValues.then((response) => {
         const items = response.links;
 
@@ -63,7 +63,7 @@ const LoadMore = () => {
           const currentListItem = listItems[index];
 
           if (currentListItem === undefined) {
-            createLoadedItems(item);
+            createLoadedItems(item, index);
           } else {
             buttonLoad.textContent = 'No items to load';
             buttonLoad.setAttribute('disabled', 'disabled');

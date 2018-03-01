@@ -46,7 +46,7 @@ const CreateMarkup = () => {
 
       itemLI.innerHTML = markup;
 
-      if (listWrapper.childNodes.length < 5) {
+      if (listWrapper.childNodes.length < 6) {
         listWrapper.appendChild(itemLI);
         listWrapper.classList.add('is-active');
 
