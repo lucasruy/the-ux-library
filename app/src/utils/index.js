@@ -36,13 +36,27 @@ export const orderDate = function order(a, b) {
 
 export const markupPost = (item, index) => {
   const listWrapper = document.querySelector('.posts-list');
+
   const { comments, upvotes, category } = item;
   const { author, title, url } = item.meta;
+  const categoryText = 'null';
 
   const itemLI = document.createElement('LI');
 
   itemLI.setAttribute('class', 'posts-list__item');
   itemLI.setAttribute('data-id', `${index}`);
+
+  const categoryValues = () => {
+    if (category === 'ux_ui') {
+      return 'UX Theory';
+    } else if (category === 'case_study') {
+      return 'Case Study';
+    } else if (category === 'product_design') {
+      return 'Product Design';
+    } else if (category === 'discussion') {
+      return 'Opinion';
+    }
+  };
 
   const markup = `
     <div class="post-popularity" title='Popularity'>
@@ -55,7 +69,7 @@ export const markupPost = (item, index) => {
       <h2>${title}</h2>
       <div class="post-content__elements">
         <div class="post-content__elements__tags">
-          <span data-tag="${category}">${category}</span>
+          <span data-tag="${category}">${categoryValues()}</span>
         </div>
         <div class="post-content__elements__info">
           <span class="info-author">${author}</span>
