@@ -1,0 +1,92 @@
+@media only screen and (max-width: 768px) {
+  body {
+    padding 0px 15px
+  }
+  .navigation__user {
+    width 25%
+  }
+  .navigation__logo {
+    width 10%
+
+    img {
+      display block
+      margin 0px auto
+    }
+  }
+  .navigation__menu {
+    width 15%
+    padding-left 15px
+  }
+  .navigation__search {
+    width 50%
+  }
+  .footer__infos,.footer__about {
+    display block
+    width 100%
+    text-align center
+    padding 15px 0px 20px
+
+    img {
+      display block
+      margin 0px auto 20px
+    }
+    .social-list, .about-list {
+      display block
+      &:after {
+        display none
+      }
+      li {
+        display block
+        width 100%
+        padding 10px 0px
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .navigation__user {
+    display none
+  }
+  .navigation__logo {
+    width 15%
+  }
+  .navigation__menu {
+    width 20%
+  }
+  .navigation__search {
+    width 60%
+  }
+  .post-popularity {
+    width 10% !important
+  }
+  .post-content {
+    position relative
+    width 85% !important
+
+    h2 {
+      font-size: 18px;
+    }
+    .post-content__elements {
+      .post-content__elements__tags {
+        width 100%
+        border 0px
+
+        position absolute
+        bottom -25px
+        left 0px
+      }
+      .post-content__elements__info {
+        width 100%
+        .info-author, .info-date, .info-comments, .info-edit {
+          margin-right: 10px;
+          font-size 12px
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .navigation__menu {
+    padding-left 10px
+  }
+}
