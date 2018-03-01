@@ -21,18 +21,6 @@ const SearchInput = () => {
     notFound.classList.remove('is-active');
   };
 
-  const notFoundItem = (el, value) => {
-    const notFound = document.querySelector('.u-not-found');
-    const notFoundMessage = document.querySelector('.u-not-found strong');
-
-    for (let i = 0; i < el.length; i += 1) {
-      el[i].classList.add('is-hidden');
-    }
-
-    notFound.classList.add('is-active');
-    notFoundMessage.textContent = value;
-  };
-
   const filterElements = () => {
     const postItems = document.querySelectorAll('.posts-list__item');
     const postItemsTitle = document.querySelectorAll('.posts-list__item h2');
