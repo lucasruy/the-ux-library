@@ -27,7 +27,7 @@ const LoadMore = () => {
         <h2>${title}</h2>
         <div class="post-content__elements">
         <div class="post-content__elements__tags">
-          <span data-tag="${category}">Product Desing</span>
+          <span data-tag="${category}">${category}</span>
         </div>
         <div class="post-content__elements__info">
           <span class="info-author">${author}</span>

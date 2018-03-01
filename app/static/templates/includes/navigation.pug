@@ -7,9 +7,9 @@ nav(class='navigation')
       ul(class='menu-dropdown')
         span(class='menu-dropdown__hamburguer')
         div(class='menu-dropdown__list')
-          li(class='menu-dropdown__list__item') Popularidade
-          li(class='menu-dropdown__list__item') Data
-          li(class='menu-dropdown__list__item') Comentários
+          li(class='menu-dropdown__list__item', data-type='popularity') By popularity
+          li(class='menu-dropdown__list__item', data-type='date') By date
+          li(class='menu-dropdown__list__item', data-type='comments') By comments
 
     div(class='navigation__search')
       +searchInput('text', 'input input--search')

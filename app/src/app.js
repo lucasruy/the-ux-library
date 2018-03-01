@@ -13,6 +13,9 @@ import LoadMore from './components/LoadMore';
 // SearchInput ----------------------------
 import SearchInput from './components/SearchInput';
 
+// FilterBy -------------------------------
+import FilterBy from './components/FilterBy';
+
 // ========================================
 // Init Events  ---------------------------
 window.addEventListener('load', () => {
@@ -20,4 +23,5 @@ window.addEventListener('load', () => {
   CreateMarkup();
   LoadMore();
   SearchInput();
+  FilterBy();
 });

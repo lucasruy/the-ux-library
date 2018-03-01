@@ -29,15 +29,16 @@ const CreateMarkup = () => {
           <h2>${title}</h2>
           <div class="post-content__elements">
             <div class="post-content__elements__tags">
-              <span data-tag="${category}">Product Desing</span>
+              <span data-tag="${category}">${category}</span>
             </div>
             <div class="post-content__elements__info">
               <span class="info-author">${author}</span>
               <span class="info-date">43 minutes ago</span>
-              <span class="info-comments">
+              <span class="info-comments" data-comments="${comments}">
                 <svg>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/icons.svg#chat"></use>
-                </svg>${comments} comments</span>
+                </svg>
+                ${comments} comments</span>
                 <span class="info-edit">Edit</span>
             </div>
           </div>
