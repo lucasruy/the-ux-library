@@ -1,3 +1,4 @@
+import { markupPost } from '../utils';
 import GetValues from './GetValues';
 
 const LoadMore = () => {
@@ -7,47 +8,7 @@ const LoadMore = () => {
   const listWrapper = document.querySelector('.posts-list');
 
   const createLoadedItems = (infos, index) => {
-    const { comments, upvotes, category } = infos;
-    const { author, title, url } = infos.meta;
-
-    const itemLI = document.createElement('LI');
-
-    itemLI.setAttribute('class', 'posts-list__item');
-    itemLI.setAttribute('data-id', `${index}`);
-
-    const markup = `
-      <div class="post-popularity">
-        <svg>
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/icons.svg#arrow"></use>
-        </svg>
-        <span>${upvotes}</span>
-      </div>
-      <div class="post-content">
-        <h6>${url}</h6>
-        <h2>${title}</h2>
-        <div class="post-content__elements">
-        <div class="post-content__elements__tags">
-          <span data-tag="${category}">${category}</span>
-        </div>
-        <div class="post-content__elements__info">
-          <span class="info-author">${author}</span>
-          <span class="info-date">43 minutes ago</span>
-          <span class="info-comments">
-            <svg>
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/svg/icons.svg#chat"></use>
-            </svg>${comments} comments</span>
-            <span class="info-edit">Edit</span>
-          </div>
-        </div>
-      </div>
-    `;
-
-    itemLI.innerHTML = markup;
-
-    listWrapper.appendChild(itemLI);
-
-    listWrapper.classList.add('is-active');
-    buttonLoad.classList.remove('is-active');
+    markupPost(infos, index);
   };
 
   buttonLoad.addEventListener('click', () => {
@@ -64,6 +25,7 @@ const LoadMore = () => {
 
           if (currentListItem === undefined) {
             createLoadedItems(item, index);
+            buttonLoad.classList.remove('is-active');
           } else {
             buttonLoad.textContent = 'No items to load';
             buttonLoad.setAttribute('disabled', 'disabled');
