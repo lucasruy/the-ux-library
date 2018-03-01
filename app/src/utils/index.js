@@ -39,13 +39,13 @@ export const markupPost = (item, index) => {
 
   const { comments, upvotes, category } = item;
   const { author, title, url } = item.meta;
-  const categoryText = 'null';
 
   const itemLI = document.createElement('LI');
 
   itemLI.setAttribute('class', 'posts-list__item');
   itemLI.setAttribute('data-id', `${index}`);
 
+  /* eslint-disable */
   const categoryValues = () => {
     if (category === 'ux_ui') {
       return 'UX Theory';
@@ -57,6 +57,7 @@ export const markupPost = (item, index) => {
       return 'Opinion';
     }
   };
+  /* eslint-enable */
 
   const markup = `
     <div class="post-popularity" title='Popularity'>

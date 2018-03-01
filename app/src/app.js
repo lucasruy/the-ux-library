@@ -1,6 +1,11 @@
 // =========================================
 // Import Functions  -----------------------
 
+// Polyfill -----------------------------
+import 'whatwg-fetch';
+import 'promise/polyfill';
+import 'nodelist-foreach-polyfill';
+
 // Dropdown -------------------------------
 import Dropdown from './components/Dropdown';
 

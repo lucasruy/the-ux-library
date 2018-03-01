@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const GetValues = (urlGet) => {
   const responseValues = fetch(urlGet, { method: 'GET' })
     .then(response => response.json())
