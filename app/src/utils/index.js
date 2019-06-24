@@ -35,26 +35,26 @@ export const orderDate = function order(a, b) {
 };
 
 export const markupPost = (item, index) => {
-  const listWrapper = document.querySelector('.posts-list');
+  const listWrapper = document.querySelector(".posts-list");
 
   const { comments, upvotes, category } = item;
   const { author, title, url } = item.meta;
 
-  const itemLI = document.createElement('LI');
+  const itemLI = document.createElement("LI");
 
-  itemLI.setAttribute('class', 'posts-list__item');
-  itemLI.setAttribute('data-id', `${index}`);
+  itemLI.setAttribute("class", "posts-list__item");
+  itemLI.setAttribute("data-id", `${index}`);
 
   /* eslint-disable */
   const categoryValues = () => {
-    if (category === 'ux_ui') {
-      return 'UX Theory';
-    } else if (category === 'case_study') {
-      return 'Case Study';
-    } else if (category === 'product_design') {
-      return 'Product Design';
-    } else if (category === 'discussion') {
-      return 'Opinion';
+    if (category === "ux_ui") {
+      return "UX Theory";
+    } else if (category === "case_study") {
+      return "Case Study";
+    } else if (category === "product_design") {
+      return "Product Design";
+    } else if (category === "discussion") {
+      return "Opinion";
     }
   };
   /* eslint-enable */
@@ -88,5 +88,5 @@ export const markupPost = (item, index) => {
 
   itemLI.innerHTML = markup;
   listWrapper.appendChild(itemLI);
-  listWrapper.classList.add('is-active');
+  listWrapper.classList.add("is-active");
 };
