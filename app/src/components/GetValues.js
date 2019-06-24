@@ -1,12 +1,12 @@
 /* eslint-disable */
 
 const GetValues = urlGet => {
-  const responseValues = fetch(urlGet, { method: "GET" })
+  const responseValues = fetch(urlGet, { method: 'GET' })
     .then(response => response.json())
     .then(response => response)
-    .catch(error => console.error(error));
+    .catch(error => console.error(error))
 
-  return responseValues;
-};
+  return responseValues
+}
 
-export default GetValues;
+export default GetValues

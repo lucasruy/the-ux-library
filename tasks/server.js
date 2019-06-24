@@ -1,18 +1,18 @@
-import gulp from 'gulp';
-import browserSync from 'browser-sync';
+import gulp from 'gulp'
+import browserSync from 'browser-sync'
 
-gulp.task ('server', () => {
+gulp.task('server', () => {
   return browserSync.init({
     open: 'external',
     files: [
       'dist/index.html',
       'dist/assets/stylesheets/*.css',
-      'dist/assets/javascripts/*.js',
+      'dist/assets/javascripts/*.js'
     ],
     server: {
-      baseDir: './dist/',
-    },
-  });
-});
+      baseDir: './dist/'
+    }
+  })
+})
 
-gulp.task('browserSync', ['server']);
+gulp.task('browserSync', ['server'])
