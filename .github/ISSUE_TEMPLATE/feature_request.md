@@ -1,3 +1,8 @@
+---
+name: Feature request
+about: Suggest an idea for this project
+---
+
 #### Please describe motivation and why you requested this feature.
 
 A clear and concise description of your feature.
