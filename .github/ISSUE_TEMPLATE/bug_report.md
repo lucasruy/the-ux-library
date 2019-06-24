@@ -1,36 +1,31 @@
----
-name: Bug report
-about: Create a report to help us improve
----
+#### Bug description
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+Please describe bug with a clear and concise words.
 
-**To Reproduce**
-Steps to reproduce the behavior:
+#### Simulate bug
 
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+Steps for simulate bug:
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+1. Click on '...'
+2. Scroll to '....'
+3. See error
 
-**Screenshots**
+Expected behavior
+Describe in a clear way what you expect.
+
+#### Screenshots
+
 If applicable, add screenshots to help explain your problem.
 
-**Code snippets**
+#### Code snippets
+
 If applicable, add code samples to help explain your problem.
 
-**System:**
+#### System used:
 
-- OS: [e.g. iOS, Windows10, MacOS]
 - Device: [e.g. iPhoneX, Macbook Pro 2018]
 - Browser: [e.g. chrome, safari]
-- Framework: [e.g. react, vue, angular]
-- Addons: [if relevant]
-- Version: [e.g. 4.0.0]
 
-**Additional context**
+#### Additional informations
+
 Add any other context about the problem here.
